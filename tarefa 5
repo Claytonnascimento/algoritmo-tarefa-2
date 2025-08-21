@@ -1,0 +1,13 @@
+def verificar_cpf(cpf):
+    cpf = cpf.strip()
+    if len(cpf) != 11:
+        return "CPF inválido: deve conter apenas 11 dígitos."
+
+    if not cpf.isdigit():
+        return "CPF inválido: deve conter apenas números."
+
+    return "CPF válido."
+
+cpf_usuario = input("Digite o CPF (somente números): ")
+resultado = verificar_cpf(cpf_usuario)
+print(resultado)
