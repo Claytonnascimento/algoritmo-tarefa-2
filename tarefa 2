@@ -1,0 +1,10 @@
+senha_correta = "senha123"
+tentativas = 3
+
+for i in range(tentativas):
+    senha = input("Digite sua senha: ")
+    if senha == senha_correta:
+        print("Bem-vindo!")
+        break
+else:
+    print("Acesso bloqueado")
