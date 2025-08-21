@@ -1,0 +1,15 @@
+def busca_linear(lista, nome_procurado):
+    for i in range(len(lista)):
+        if lista[i].lower() == nome_procurado.lower():  
+            return i 
+    return -1  
+
+nomes = ["Joao", "Pricila", "Mariana", "Adalberto", "Weveline"]
+nome_usuario = input("Digite o nome que deseja buscar: ")
+
+posicao = busca_linear(nomes, nome_usuario)
+
+if posicao != -1:
+    print(f"Nome encontrado na posição {posicao}.")
+else:
+    print("Nome não encontrado.")
